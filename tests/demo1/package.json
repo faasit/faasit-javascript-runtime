@@ -1,0 +1,14 @@
+{
+    "name": "durable-orchstrator",
+    "version": "1.0.0",
+    "description": "",
+    "module": "commonjs",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@faasit/runtime": "../../"
+    },
+    "dependencies": {}
+}

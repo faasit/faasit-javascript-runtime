@@ -1,0 +1,38 @@
+{
+  "name": "@faasit/runtime",
+  "version": "1.2.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/",
+    "operators.d.ts"
+  ],
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "test:unit": "vitest",
+    "dev-build": "npm run build && cp dist/index.cjs "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@alicloud/fc-open20210406": "^2.0.9",
+    "@alicloud/openapi-client": "^0.4.6",
+    "@alicloud/tea-util": "^1.4.7",
+    "ali-oss": "^6.20.0",
+    "axios": "^1.6.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/ali-oss": "^6.16.11",
+    "@types/node": "^20.8.4"
+  }
+}
