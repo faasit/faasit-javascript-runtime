@@ -84,7 +84,7 @@ export interface StorageMethods {
 export interface FaasitRuntime {
     name: string
 
-    storage: StorageMethods;
+    // storage: StorageMethods;
 
     metadata(): FaasitRuntimeMetadata;
 

@@ -133,12 +133,9 @@ function transformHandlerExports(conf: FunctionContainerConfig, obj: { handler: 
     case 'local':
     case 'local-once':
     case 'aliyun':
+    case 'knative':
     case 'aws':
       return obj
-    case 'knative':
-      return {
-        handle: obj.handler
-      }
     default:
       throw new UnknownProvider(conf.provider)
   }
